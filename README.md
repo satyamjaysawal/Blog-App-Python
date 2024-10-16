@@ -41,28 +41,7 @@ A simple blog application built with Flask, allowing users to create, edit, view
 - View all blog posts with pagination
 - User-friendly interface using Tailwind CSS
 
-## Technologies Used
 
-- **Python** - Backend programming language
-- **Flask** - Web framework for building the application
-- **Flask-WTF** - Forms handling and validation
-- **Flask-Login** - User session management
-- **Tailwind CSS** - Utility-first CSS framework for styling
-- **SQLite** - Lightweight database for storing posts and user information
-
-## Requirements
-
-To run this project, you need to have the following installed:
-
-- Python 3.6 or later
-- pip (Python package installer)
-
-### Dependencies
-
-Install the required packages using the following command:
-
-bash
-pip install -r requirements.txt
 
 
 ## Requirements
