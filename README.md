@@ -84,10 +84,17 @@ pip install -r requirements.txt
 
 ```plaintext
 Flask
-Flask-WTF
-Flask-Login
 Flask-SQLAlchemy
+Flask-Migrate
+Flask-Login
+Flask-Swagger-UI
+Flask-JWT-Extended
+Flask-WTF
+python-dotenv
+Flask-Bcrypt
+tailwindcss
 gunicorn
+
 ```
 
 ## Project Setup
