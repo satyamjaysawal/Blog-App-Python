@@ -15,9 +15,6 @@ The **Flask Blog Application** is a simple web-based platform that enables users
 
 ---
 
-Here's a `README.md` template for your Flask blog application project. This document outlines the project creation steps, requirements, and usage. You can customize it further to fit your needs.
-
-```markdown
 # Flask Blog Application
 
 A simple blog application built with Flask, allowing users to create, edit, view, and delete posts. Users can register, log in, and manage their own posts.
