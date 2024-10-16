@@ -32,7 +32,7 @@ A simple blog application built with Flask, allowing users to create, edit, view
 - [Usage](#usage)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
