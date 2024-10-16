@@ -61,7 +61,7 @@ To run this project, you need to have the following installed:
 
 Install the required packages using the following command:
 
-```bash
+bash
 pip install -r requirements.txt
 
 
