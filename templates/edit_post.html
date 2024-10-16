@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Post{% endblock %}
+
+{% block content %}
+    <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-6 text-center">Edit Post</h2>
+        
+        <form method="POST" action="{{ url_for('main.update_post', id=post.id) }}">
+            {{ form.hidden_tag() }}
+
+            <div class="mb-6">
+                <label for="{{ form.title.id }}" class="block text-gray-700 font-medium">{{ form.title.label }}</label>
+                {{ form.title(class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 py-2 px-3", placeholder="Enter post title") }}
+            </div>
+
+            <div class="mb-6">
+                <label for="{{ form.content.id }}" class="block text-gray-700 font-medium">{{ form.content.label }}</label>
+                {{ form.content(class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 py-2 px-3", rows=8, placeholder="Write your content here...") }}
+            </div>
+
+            <div class="flex justify-between items-center">
+                {{ form.submit(class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200") }}
+                <a href="{{ url_for('main.post_detail', id=post.id) }}" class="text-blue-500 hover:text-blue-700 font-medium">Cancel</a>
+            </div>
+        </form>
+        
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="mt-4">
+                    {% for message in messages %}
+                        <li class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+                            <strong class="font-semibold">Error:</strong> {{ message }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+    </div>
+{% endblock %}
